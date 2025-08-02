@@ -5,10 +5,9 @@ import { motion } from "motion/react";
 import { GoLinkExternal } from "react-icons/go";
 import { Link } from "react-router-dom";
 
-const CarouselFunction = ({ img, url }:{img:string[], url:string[]}) => {
+const CarouselFunction = ({ img, url }: { img: string[]; url: string[] }) => {
   const [count, setCount] = useState(0);
   const image = img || [];
-
 
   const handlePrev = (i: number) => {
     setCount(i <= 0 ? image.length - 1 : i - 1);
@@ -20,7 +19,7 @@ const CarouselFunction = ({ img, url }:{img:string[], url:string[]}) => {
   useEffect(() => {
     const interval = setTimeout(() => {
       setCount((prevCount) =>
-        prevCount === image.length - 1 ? 0 : prevCount + 1
+        prevCount === image.length - 1 ? 0 : prevCount + 1,
       );
     }, 3500);
 
@@ -32,8 +31,11 @@ const CarouselFunction = ({ img, url }:{img:string[], url:string[]}) => {
       <div
         className={`w-full absolute h-[350px] flex items-center justify-between`}
       >
-        {image.map((el, i) => (
-          <div className={`${count === i && img.length > 1 ? "" : "hidden"} w-full`} key={i}>
+        {image.map((_el, i) => (
+          <div
+            className={`${count === i && img.length > 1 ? "" : "hidden"} w-full`}
+            key={i}
+          >
             <div className=" w-full flex justify-center h-full items-center ">
               <div className="z-40 flex w-full h-full  items-center space-x-5 justify-between">
                 <div
