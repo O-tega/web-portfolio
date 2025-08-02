@@ -1,1 +1,19 @@
-npm test
+echo "\033[1;34m🚀 Running pretty-quick...\033[0m"  # Blue
+yarn pretty-quick --staged  # Runs pretty-quick on staged files
+
+if [ $? -ne 0 ]; then
+  echo "\033[1;31m😩 pretty-quick detected issues. Aborting.\033[0m"  # Red
+  exit 1
+fi
+
+echo "\033[1;32m🎉 All staged files are properly formatted!\033[0m"
+
+echo "\033[1;35m🌀 Adding changes to git...\033[0m"  # Purple
+git add .
+
+if [ $? -eq 0 ]; then
+  echo "\033[1;32m✅ Changes successfully staged! You're good to go.\033[0m"
+else
+  echo "\033[1;31m❌ Failed to stage changes. Check for issues and try again.\033[0m"
+  exit 1
+fi

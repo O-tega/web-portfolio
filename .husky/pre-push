@@ -1,0 +1,9 @@
+echo  "\033[1;35m🤪 Lmaoo.. Running ESLint...\033[0m"  # Purple
+yarn lint
+
+if [ $? -ne 0 ]; then
+  echo "\033[1;34m😪 Linting errors detected. 🐞 Aborting push.\033[0m"  # Blue
+  exit 1
+fi
+
+echo "\033[1;32m🚀 Yo! No linting errors 😘. Proceeding with push...\033[0m"  # Green
