@@ -1,5 +1,4 @@
 import { motion } from "motion/react";
-// import { IoClose } from "react-icons/io5";
 
 type TMenu = {
   showMenu: boolean;
