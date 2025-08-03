@@ -39,7 +39,7 @@ const AboutMe = () => {
             strategic technology planning and cross-functional architecture
             decisions.
           </Typography.Text>
-          <Typography.Text className=" w-full flex justify-center px-12 md:hidden">
+          <Typography.Text className=" w-full flex justify-center px-5 md:hidden">
             Aspiring Solution Architect with full-stack skills, building
             scalable systems and cloud expertise to drive enterprise
             architecture and tech strategy.
