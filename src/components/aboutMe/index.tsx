@@ -130,10 +130,16 @@ const AboutMe = () => {
                 <div className="grid grid-cols-2 divide-dashed divide-cosmic-light-blue/20 border-cosmic-light-blue/20">
                   <div className=""></div>
                   <div className="flex items-center p-4 border-l border-cosmic-light-blue/20 border-dashed">
-                    <div className="border w-full px-2 py-1 flex items-center justify-center space-x-2 text-white/ hover:text-white/70 cursor-pointer transition-all duration-300">
-                      <GrDocumentUser />
-                      <p className="text-[12px] font-[200]">Download my CV</p>
-                    </div>
+                    <a
+                      href="https://drive.google.com/file/d/1-bAhgOSqqdo62XBLBm5OQNYwQnSdWjF9/view?usp=sharing"
+                      className="w-full"
+                      target="_blank"
+                    >
+                      <div className="border w-full px-2 py-1 flex items-center justify-center space-x-2 text-white/ hover:text-white/70 cursor-pointer transition-all duration-300">
+                        <GrDocumentUser />
+                        <p className="text-[12px] font-[200]">Download my CV</p>
+                      </div>
+                    </a>
                   </div>
                 </div>
               </div>
