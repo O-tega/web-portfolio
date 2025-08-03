@@ -5,7 +5,7 @@ type TMenu = {
   setShowMenu: (arg: boolean) => void;
 };
 
-const MobileNav: React.FC<TMenu> = ({ showMenu }) => {
+const MobileNav: React.FC<TMenu> = ({ showMenu, setShowMenu }) => {
   const backdrop = {
     visible: { opacity: 1 },
     hidden: {
@@ -62,7 +62,11 @@ const MobileNav: React.FC<TMenu> = ({ showMenu }) => {
               <div className="px-5">
                 <ul className={`space-y-4 w-full`}>
                   {links.map((link, i) => (
-                    <div key={i} className="">
+                    <div
+                      key={i}
+                      className=""
+                      onClick={() => setShowMenu(!showMenu)}
+                    >
                       <a href={link.url}>
                         <div className="flex items-center justify-center cursor-pointer border border-cosmic-light-blue/50 h-[50px] rounded-[50px] text-center hover:bg-cosmic-light-blue/50 bg-cosmic-blue-dark/30">
                           <p>{link.name}</p>
