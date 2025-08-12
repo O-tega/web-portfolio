@@ -81,7 +81,7 @@ export const projects = [
 
 export const WorkExperience = [
   {
-    role: "Frontend Developer",
+    role: "Frontend Engineer",
     company: "Enterscale",
     description:
       "Enterscale provides startup acceleration services and community-driven products, including marketing automation tools and educational content.",
@@ -96,7 +96,7 @@ export const WorkExperience = [
     logo: enterscaleLogo,
   },
   {
-    role: "Intern Frontend Developer",
+    role: "Intern Frontend Engineer",
     company: "Alabian Solution",
     description:
       "Alabian Solutions combines IT consulting, software and web services, and practical training, positioning themselves as a full-stack digital services provider and coding school.",

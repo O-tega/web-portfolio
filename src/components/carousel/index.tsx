@@ -95,7 +95,7 @@ const CarouselFunction = ({ img, url }: { img: string[]; url: string[] }) => {
                     rel="noopener noreferrer"
                   >
                     <div className="absolute bottom-0 left-0 bg-black/70 text-white p-2 w-full text-center flex items-center justify-center gap-x-2 font-[200] z-50">
-                      visit website <GoLinkExternal />
+                      Visit website <GoLinkExternal />
                     </div>
                   </Link>
                 )}
