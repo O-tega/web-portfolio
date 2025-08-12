@@ -7,7 +7,7 @@ const MyServices = () => {
     <div>
       <div className="flex w-full justify-center">
         <Typography.Heading className="text-center flex ">
-          What we do
+          My Services
         </Typography.Heading>
       </div>
       <div className="flex justify-center">
@@ -29,10 +29,14 @@ const MyServices = () => {
       </div>
       <div className="mt-10">
         <Marquee className="space-x-7" speed={100}>
-            {serviceLogo.map((logo, index)=>(
-                <img key={index} src={logo} alt={`Service Logo ${index}`} className="w-[120px] mx-4" />
-            ))}
-
+          {serviceLogo.map((logo, index) => (
+            <img
+              key={index}
+              src={logo}
+              alt={`Service Logo ${index}`}
+              className="w-[120px] mx-4"
+            />
+          ))}
         </Marquee>
       </div>
     </div>

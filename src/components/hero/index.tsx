@@ -63,7 +63,7 @@ const Hero = () => {
           <div className="md:pl-[5rem]">
             <p className="mt-10 md:mt-0">
               <Typography.Text className="text-cosmic-light-blue md:block flex justify-center w-full">
-                Web developer & Software Architect
+                Web Engineer & Software Architect
               </Typography.Text>
               <Typography.Heading className="my-4 px-3 md:px-0">
                 Agency-level web development services at freelancer rates

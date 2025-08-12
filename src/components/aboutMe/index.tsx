@@ -1,15 +1,15 @@
 import Typography from "../../utils/Typography";
-import { motion } from "motion/react";
-import img2 from "../../assets/images/img2.webp";
+// import { motion } from "motion/react";
+// import img2 from "../../assets/images/img2.webp";
 import { WorkExperience } from "../data/workData";
 import { BsDot } from "react-icons/bs";
 import { GrDocumentUser } from "react-icons/gr";
 
 const AboutMe = () => {
   return (
-    <div className="">
+    <div className="md:mt-10">
       <div className="relative">
-        <div className="flex justify-center w-full ">
+        {/* <div className="flex justify-center w-full ">
           <motion.div
             className="md:w-[50%] md:h-[87vh] h-[50vh] overflow-hidden rounded-2xl"
             initial={{ opacity: 0, x: -100 }}
@@ -23,12 +23,12 @@ const AboutMe = () => {
               />
             </div>
           </motion.div>
-        </div>
-        <div className="flex flex-col justify-center w-full z-30 absolute bottom-0">
-          <Typography.PageHeaders className="mt-4 w-full flex justify-center leading-[0.8]">
+        </div> */}
+        <div className="flex flex-col justify-center w-full z-30  bottom-0">
+          <Typography.Heading className="mt-4 w-full flex justify-center leading-[0.8]">
             ABOUT ME
-          </Typography.PageHeaders>
-          <Typography.Text className=" w-full md:flex justify-center px-12 hidden ">
+          </Typography.Heading>
+          <Typography.Text className=" w-full md:flex justify-center px-12 hidden text-center mt-5">
             Aspiring Solution Architect with a robust foundation in full-stack
             development and a strong passion for system design, cloud
             architecture and scalable enterprise solution. Proven experience
