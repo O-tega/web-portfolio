@@ -7,26 +7,25 @@ import { AiOutlineMail } from "react-icons/ai";
 import { MdArrowOutward } from "react-icons/md";
 
 const Footer = () => {
-
   const socialLinks = [
     {
       name: "LinkedIn",
-      url: "https://linkedin.com/",
+      url: "https://www.linkedin.com/in/oghenetega-igho-571831170/",
       icon: <PiLinkedinLogo />,
     },
     {
       name: "Whatsapp",
-      url: "https://linkedin.com/",
+      url: "https://wa.me/+2348089616349",
       icon: <FaWhatsapp />,
     },
     {
       name: "GitHub",
-      url: "https://github.com/",
+      url: "https://github.com/O-tega",
       icon: <FaGithub />,
     },
     {
       name: "Email",
-      url: "https://github.com/",
+      url: "mailto:tega.myview@gmail.com",
       icon: <AiOutlineMail />,
     },
   ];
