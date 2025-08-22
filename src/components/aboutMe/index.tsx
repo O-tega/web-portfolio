@@ -131,7 +131,7 @@ const AboutMe = () => {
                   <div className=""></div>
                   <div className="flex items-center p-4 border-l border-cosmic-light-blue/20 border-dashed">
                     <a
-                      href="https://drive.google.com/file/d/1kXRHkuO2ASBARk5B7ax5KmLjdTUuRaW7/view?usp=sharing"
+                      href="https://drive.google.com/file/d/1VHMn7hUDNxSAErMje_C4l-Sc_qMXtcYB/view?usp=sharing"
                       className="w-full"
                       target="_blank"
                     >
